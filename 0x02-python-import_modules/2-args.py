@@ -4,7 +4,6 @@ if __name__ =="__main__":
 
     list = argv
     len = len(argv) - 1
-    count = 1
 
     if len == 0:
             print("{:d} arguements.".format(len))
@@ -13,7 +12,6 @@ if __name__ =="__main__":
     else:
         print("{:d} arguements:".format(len))
 
-    while count < len or count == len:
-        arg = list[count]
-        print("{:d}: {:s}".format(count, arg))
-        count += 1
+    for i, s in enumerate(list):
+        if i > 0:
+            print("{:d}: {:s}".format(i, s))
