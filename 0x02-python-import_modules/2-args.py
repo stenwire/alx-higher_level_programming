@@ -7,13 +7,13 @@ if __name__ =="__main__":
     count = 1
 
     if len == 0:
-            print(f"{len:d} arguements.")
+            print("{:d} arguements.".format(len))
     elif len == 1:
-            print(f"{len:d} arguement:")
+            print("{:d} arguement:".format(len))
     else:
-        print(f"{len:d} arguements:")
+        print("{:d} arguements:".format(len))
 
     while count < len or count == len:
         arg = list[count]
-        print(f"{count:d}: {arg:s}")
+        print("{:d}: {:s}".format(count, arg))
         count += 1
