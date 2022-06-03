@@ -4,9 +4,9 @@ if __name__ =="__main__":
     list = argv
     len = len(list) - 1
     if len == 0:
-            print("{:d} arguements.".format(len))
+        print("{:d} arguements.".format(len))
     elif len == 1:
-            print("{:d} arguement:".format(len))
+        print("{:d} arguement:".format(len))
     else:
         print("{:d} arguements:".format(len))
     for i, j in enumerate(list):
