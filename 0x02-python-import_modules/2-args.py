@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-import sys
 if __name__ == "__main__":
-    argv = sys.argv
+    from sys import argv
     if len(argv) - 1 == 1:
         print("{} argument:".format(len(argv) - 1))
     elif len(argv) - 1 > 0:
