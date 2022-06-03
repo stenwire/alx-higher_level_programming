@@ -1,14 +1,12 @@
 #!/usr/bin/python3
-if __name__ =="__main__":
-    from sys import argv
-    list = argv
-    len = len(list) - 1
-    if len == 0:
-        print("{:d} arguements.".format(len))
-    elif len == 1:
-        print("{:d} arguement:".format(len))
+import sys
+if __name__ == "__main__":
+    argv = sys.argv
+    if len(argv) - 1 == 1:
+        print("{} argument:".format(len(argv) - 1))
+    elif len(argv) - 1 > 0:
+        print("{} arguments:".format(len(argv) - 1))
     else:
-        print("{:d} arguements:".format(len))
-    for i, j in enumerate(list):
-        if i > 0:
-            print("{:d}: {:s}".format(i, j))
+        print("0 arguments.")
+    for i in range(1, len(argv)):
+        print("{}: {}".format(i, argv[i]))
