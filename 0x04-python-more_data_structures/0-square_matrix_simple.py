@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-    if matrix:
-        new_mat = []
-        for i in matrix:
-            new_mat.append(list(map((lambda x: x*x), i )))   
-        return new_mat
+    for item in matrix:
+        new_list = list(map((lambda x: x * x), item))
+    return new_list
