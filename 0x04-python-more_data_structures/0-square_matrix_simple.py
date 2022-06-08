@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
     if matrix:
-        sqr_mat = []
+        new_mat = []
         for row in matrix:
-            cln = []
+            row_mat = []
             for i in row:
-                cln.append(i ** 2)
-            sqr_mat.append(cln)
-        return sqr_mat
+                row_mat.append(i ** 2)
+            new_mat.append(cln)
+        return new_mat
