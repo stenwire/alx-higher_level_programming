@@ -2,7 +2,7 @@
 
 /**
  * print_dlistint - Prints all the elements of a double linked list
- * @h: Head of the linked list
+ * @h: Head of the linked list - sten
  *
  * Return: Number of nodes (size_t)
  */
