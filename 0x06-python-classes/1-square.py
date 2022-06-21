@@ -12,7 +12,7 @@ class Square:
         """Initialise the size of the square
         
         Args:
-            __size (int): represents the size of a square.
+            size (int): represents the size of a square.
 
         Returns: None
         """
