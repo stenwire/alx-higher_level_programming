@@ -14,7 +14,8 @@ class Square:
         Args:
             __size (int): represents the size of a square.
 
-        Returns: None
+        Returns:
+            None
         """
         type_err = 'size must be an integer'
         val_err = 'size must be >= 0'
