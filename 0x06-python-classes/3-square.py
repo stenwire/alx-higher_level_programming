@@ -6,13 +6,13 @@ class Square:
     """A square class that defines a private instance attribute
 
     Attributes:
-        __size (int): A private instance attribute.
+        __size (int): A private instance attribute
     """
     def __init__(self, size=0):
         """Initialise the size of the square
 
         Args:
-            size (int): represents the size of a square.
+            size (int): represents the size of a square
 
         Returns:
             None
