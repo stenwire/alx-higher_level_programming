@@ -41,7 +41,7 @@ class Square:
         """setter of __size
 
         Args:
-            value (int): the size of a size of the square
+            value (int): size of a side of the square
 
         Returns:
             None
@@ -55,12 +55,13 @@ class Square:
                 self.__size = value
 
     def my_print(self):
-        """prints the character of square
-        
+        """prints the square
+
         Returns:
             None
         """
         if self.__size == 0:
             print()
+            return
         for i in range(self.__size):
-            print('#'*self.__size)
+            print("".join(["#" for j in range(self.__size)]))
