@@ -8,3 +8,6 @@ class TestMaxInteger(unittest.TestCase):
     def testMax(self):
         self.assertAlmostEqual(max_integer([1, 2, 3, 4]), 4)
         self.assertAlmostEqual(max_integer([1, 3, 4, 2]), 4)
+
+if __name__ == "__main__":
+    unittest.main()
