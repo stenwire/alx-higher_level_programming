@@ -1,4 +1,5 @@
 #!/usr/bin/python3
 class LockedClass:
-    """A locked class is a class that only lets the user use the preset instance"""
+    """A locked class that only lets the user dynamically create the instance
+    attribute 'first_name'"""
     __slots__ = ['first_name']
