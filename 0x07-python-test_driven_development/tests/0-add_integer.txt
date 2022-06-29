@@ -55,31 +55,31 @@ Checking non-number with number:
     >>> add_integer([1], 2)
     Traceback (most recent call last):
     ...
-    TypeError: a must be an integer or b must be an integer
+    TypeError: a must be an integer
 
 Checking number with non-number:
     >>> add_integer(3, "2")
     Traceback (most recent call last):
     ...
-    TypeError: a must be an integer or b must be an integer
+    TypeError: b must be an integer
 
 Checking non-number with non-number:
     >>> add_integer((2,), {"key": "value"})
     Traceback (most recent call last):
     ...
-    TypeError: a must be an integer or b must be an integer
+    TypeError: a must be an integer
 
 Checking bool with number:
     >>> add_integer(True, 1)
     Traceback (most recent call last):
     ...
-    TypeError: a must be an integer or b must be an integer
+    TypeError: a must be an integer
 
 Checking number with bool:
     >>> add_integer(0, False)
     Traceback (most recent call last):
     ...
-    TypeError: a must be an integer or b must be an integer
+    TypeError: b must be an integer
 
 Checking no args:
     >>> add_integer()
