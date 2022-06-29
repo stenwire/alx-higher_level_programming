@@ -22,7 +22,6 @@ def print_square(size):
         raise ZeroDivisionError('size must be >= 0')
     if type(size) is float and size < 0:
         raise TypeError('size must be an integer')
-
     i = 0
     while i < size:
         i+=1
