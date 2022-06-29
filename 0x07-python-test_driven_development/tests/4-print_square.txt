@@ -52,7 +52,6 @@ Checking for positive ints:
 	 ##########
 	 ##########
 	 ##########
-	 >>> print_square(0)
 	 >>> print_square(1)
 	 #
 
