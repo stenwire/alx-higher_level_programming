@@ -8,14 +8,7 @@ This module contains one function print_square()
 
 
 def print_square(size):
-    """Prints a square of '#' character(s)
-
-    Args:
-        size (int): size of square
-
-    Returns:
-        Nothing
-    """
+    """Prints a square of '#' character(s)"""
     if type(size) is not int:
         raise TypeError('size must be an integer')
     if size < 0:
