@@ -3,7 +3,7 @@
 
 
 class Student():
-    """Definition of student clas"""
+    """Definition of student class"""
     def __init__(self, first_name, last_name, age):
         """Definition of students property"""
         self.first_name = first_name
@@ -12,4 +12,5 @@ class Student():
 
 
     def to_json(self):
+        """Returns dict of obj"""
         return self.__dict__
