@@ -16,6 +16,6 @@ try:
 except Exception:
     text = []
 
-for i in range(1, len(argv)):
-    content.append(argv[i])
-save_to_json_file(content, filename)
+for arg in args:
+    text.append(arg)
+save_to_json_file(text, filename)
