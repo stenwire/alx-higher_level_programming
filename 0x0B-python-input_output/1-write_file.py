@@ -1,5 +1,11 @@
 #!/usr/bin/python3
+"""
+Contains the write_file function
+"""
+
+
 def write_file(filename="", text=""):
+    """write to and output a text file"""
     chars = 1
     # open file to write
     with open(filename, mode='w+', encoding='utf-8') as f:
