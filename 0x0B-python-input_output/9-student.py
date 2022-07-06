@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""A class Student that defines some student property"""
+"""
+A class Student that defines some student property
+"""
 
 
 class Student():
