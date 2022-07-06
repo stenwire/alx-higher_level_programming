@@ -5,7 +5,6 @@ and then saves them to a json file
 """
 
 
-
 from sys import argv
 """Importing The argv mwthod from sys module"""
 
