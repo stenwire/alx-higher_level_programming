@@ -24,4 +24,4 @@ class Student():
                 except KeyError:
                     pass
             return my_dict
-        return(self.__dict__)
+        return self.__dict__
