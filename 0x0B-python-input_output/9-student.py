@@ -1,17 +1,22 @@
 #!/usr/bin/python3
-"""A class Student that defines some student property"""
+"""
+A module that retrives dictionary rep of student
+"""
 
 
-class Student():
-    """Definition of student clas"""
+class Student(object):
+    """
+    A student class
+    """
+
     def __init__(self, first_name, last_name, age):
-        """Definition of students property"""
         self.first_name = first_name
         self.last_name = last_name
         self.age = age
 
-
     def to_json(self):
-        """Method that retrieves a dictionary representation 
-        of a Student instance"""
-        return(self.__dict__)
+        stu_dict = self.__dict__.copy()
+        for key in stu_dict:
+            if key[-2:] == "__":
+                del stu_dict[key]
+        return stu_dict

@@ -5,6 +5,7 @@ Contains the from_json_string function
 
 
 import json
+"""Importing The json module"""
 
 
 def from_json_string(my_str):
