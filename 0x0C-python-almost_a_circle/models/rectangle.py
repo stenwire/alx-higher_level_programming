@@ -3,16 +3,8 @@
 Contains the "Rectangle" class
 """
 
+from models.base import Base
 
-class Base:
-    """A representation of a rectangle"""
-    __nb_objects = 0
-    def __init__(self, id=None):
-        if id is not None:
-            self.id = id
-        else:
-            Base.__nb_objects+=1
-            self.id = Base.__nb_objects
 
 class Rectangle(Base):
     """A representation of a rectangle"""
@@ -33,8 +25,10 @@ class Rectangle(Base):
         """setter for width"""
         if type(value) is not int:
             raise TypeError('width must be an integer')
+        
         if value <= 0:
             raise ValueError('width must be > 0')
+
         self.__width = value
 
     @property
@@ -45,10 +39,13 @@ class Rectangle(Base):
     @height.setter
     def height(self, value):
         """getter for height"""
+        # self.__height = value
         if type(value) is not int:
             raise TypeError('height must be an integer')
+        
         if value <= 0:
             raise ValueError('height must be > 0')
+
         self.__height = value
 
     @property
@@ -59,10 +56,13 @@ class Rectangle(Base):
     @x.setter
     def x(self, value):
         """setter for x"""
+        # self.__x = value
         if type(value) is not int:
             raise TypeError('x must be an integer')
+        
         if value < 0:
             raise ValueError('x must be >= 0')
+
         self.__x = value
 
     @property
@@ -73,10 +73,13 @@ class Rectangle(Base):
     @y.setter
     def y(self, value):
         """setter for y"""
+        # self.__y = value
         if type(value) is not int:
             raise TypeError('y must be an integer')
+        
         if value < 0:
             raise ValueError('y must be >= 0')
+
         self.__y = value
 
     def area(self):
@@ -94,9 +97,11 @@ class Rectangle(Base):
             if i == self.__width:
                 print(' '*k + '#'*i)
 
+
     def update(self, *args, **kwargs):
         """updates multiple attributes"""
         j = len(args)
+        # print(j)
         if j:
             self.id = args[0]
             if j > 1:
@@ -135,4 +140,3 @@ class Rectangle(Base):
         s2 = str(self.__x)+"/"+str(self.__y)
         s3 = str(self.__width)+'/'+str(self.__height)
         return '[Rectangle]' + ' ' + s1 + ' ' + s2 + ' ' + '-' + ' ' + s3
-        return d
