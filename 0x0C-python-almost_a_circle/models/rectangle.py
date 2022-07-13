@@ -3,16 +3,8 @@
 Contains the "Rectangle" class
 """
 
+from models.base import Base
 
-class Base:
-    """A representation of a rectangle"""
-    __nb_objects = 0
-    def __init__(self, id=None):
-        if id is not None:
-            self.id = id
-        else:
-            Base.__nb_objects+=1
-            self.id = Base.__nb_objects
 
 class Rectangle(Base):
     """A representation of a rectangle"""
@@ -105,6 +97,7 @@ class Rectangle(Base):
             if i == self.__width:
                 print(' '*k + '#'*i)
 
+
     def update(self, *args, **kwargs):
         """updates multiple attributes"""
         j = len(args)
@@ -131,19 +124,19 @@ class Rectangle(Base):
             if "y" in kwargs:
                 self.y = kwargs["y"]
 
+    def to_dictionary(self):
+        """Rectangle instance to dictionary representation"""
+        my_dict = {}
+        my_dict['id'] = self.id
+        my_dict['width'] = self.width
+        my_dict['height'] = self.height
+        my_dict['x'] = self.x
+        my_dict['y'] = self.y
+        return my_dict
+    
     def __str__(self):
         """informal string representation of the rectangle"""
         s1 = '('+str(self.id)+')'
         s2 = str(self.__x)+"/"+str(self.__y)
         s3 = str(self.__width)+'/'+str(self.__height)
         return '[Rectangle]' + ' ' + s1 + ' ' + s2 + ' ' + '-' + ' ' + s3
-
-    def to_dictionary(self):
-        """dictionary representation of a Rectangle"""
-        d = {}
-        d["id"] = self.id
-        d["width"] = self.width
-        d["height"] = self.height
-        d["x"] = self.x
-        d["y"] = self.y
-        return d
