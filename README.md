@@ -6,5 +6,5 @@
 [![Commit](https://img.shields.io/github/last-commit/stenwire/alx-higher_level_programming.svg)](https://github.com/stenwire/alx-higher_level_programming/commits/master)
 
 A repository dedicated to ALX high level programming
-> This is Stream - 2 of the alx Software Engineering degree program which includes Python, JavaScript and C(once again:) ).
+> This is Stream - 2 of the alx Software Engineering degree program which includes Python, JavaScript and C).
 
