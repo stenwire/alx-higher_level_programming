@@ -6,7 +6,7 @@ const argLength = args.length;
 
 if (argLength <= 2 || isNaN(Number(args[2]))) {
   console.log('Missing number of occurrences');
-}/* else if () {
+/*}else if () {
 gggghhhhhhhhh*/
 } else {
   let count = 0;
