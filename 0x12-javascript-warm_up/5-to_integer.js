@@ -9,5 +9,5 @@ if (argLength <= 2) {
 } else if (isNaN(Number(args[2]))) {
   console.log('Not a number');
 } else {
-  console.log(Math.floor(Number(args[2])));
+  console.log(`My number: ${Math.floor(Number(args[2]))}`);
 }
