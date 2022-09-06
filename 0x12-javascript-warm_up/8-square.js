@@ -12,7 +12,7 @@ if (argLength <= 2) {
   let myStr = '';
   for (let i = 0; i < args[2]; i++) {
     for (let j = 0; j < args[2]; j++) {
-      myStr += 'x';
+      myStr += 'X';
     }
     console.log(myStr);
     myStr = '';
