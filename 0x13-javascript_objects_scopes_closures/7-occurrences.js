@@ -7,7 +7,7 @@ function nbOccurences (list, searchElement) {
     if (list[i] === searchElement) {
       result.push(list[i]);
     }
-    const resultLength = result.length;
-    return resultLength;
   }
+  const resultLength = result.length;
+  return resultLength;
 }
