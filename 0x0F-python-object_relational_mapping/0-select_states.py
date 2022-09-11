@@ -19,7 +19,7 @@ def main():
 
     db = MySQLdb.connect(
         host=MY_HOST, user=MY_USER,
-        passwd=MY_PASS, db=MY_DB, port=MY_PORT)
+        password=MY_PASS, db=MY_DB, port=MY_PORT)
 
     cur = db.cursor()
     cur.execute("SELECT * FROM states ORDER BY id")
