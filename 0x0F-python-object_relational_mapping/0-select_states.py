@@ -22,7 +22,7 @@ def main():
         passwd=MY_PASS, db=MY_DB, port=MY_PORT)
 
     cur = db.cursor()
-    cur.execute("SELECT * FROM states")
+    cur.execute("SELECT * FROM states ORDER BY id")
 
     rows = cur.fetchall()
     for row in rows:
