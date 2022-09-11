@@ -1,10 +1,16 @@
 #!/usr/bin/python3
-
+"""
+A script that lists all states from the 
+database hbtn_0e_0_usa
+"""
 import MySQLdb
 from sys import argv
 
 
-def main():
+def main(): 
+    """
+    main app - runs on initialization
+    """
     MY_HOST = 'localhost'
     MY_USER = argv[1]
     MY_PASS = argv[2]
