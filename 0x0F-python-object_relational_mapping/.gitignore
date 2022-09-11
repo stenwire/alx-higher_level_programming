@@ -1,2 +1,4 @@
 *.sql
 test.py
+test_2.py
+__pycache__/
