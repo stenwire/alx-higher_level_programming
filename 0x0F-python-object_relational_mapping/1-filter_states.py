@@ -1,10 +1,19 @@
 #!/usr/bin/python3
+"""
+This is a generic text, will uodate
+later
+"""
+
 
 import MySQLdb
 from sys import argv
 
 
 def main():
+    """
+    This is a generic text, will uodate
+    later
+    """
     MY_HOST = 'localhost'
     MY_USER = argv[1]
     MY_PASS = argv[2]
