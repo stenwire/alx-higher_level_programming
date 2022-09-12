@@ -32,8 +32,6 @@ def main():
     my_query = session.query(
         State.name, City.name, City.id).join(State).order_by(City.id)
 
-   # print(my_query)
-
     for city in my_query:
         print(f"{city[0]}: ({city[2]}) {city[1]}")
 
