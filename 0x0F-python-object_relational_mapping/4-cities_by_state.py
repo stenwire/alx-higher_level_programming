@@ -1,11 +1,12 @@
 #!/usr/bin/python3
-
-import MySQLdb
-from sys import argv
 """
 This is a generic text, will update
 later
 """
+
+
+import MySQLdb
+from sys import argv
 
 
 def main():
