@@ -14,6 +14,7 @@ from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
 
+
 class State(Base):
     """
     Schema for states models.
@@ -29,8 +30,8 @@ class State(Base):
 
 if __name__ == "__main__":
     engine = create_engine(
-        'mysql+mysqldb://{}:{}@localhost/{}'\
-            .format(sys.argv[1], sys.argv[2], \
+        'mysql+mysqldb://{}:{}@localhost/{}'
+        .format(sys.argv[1], sys.argv[2],
                 sys.argv[3]), pool_pre_ping=True
     )
     Base.metadata.create_all(engine)

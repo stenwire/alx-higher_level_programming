@@ -2,9 +2,17 @@
 
 import MySQLdb
 from sys import argv
+"""
+This is a generic text, will update
+later
+"""
 
 
 def main():
+    """
+    This is a generic text, will update
+    later
+    """
     MY_HOST = 'localhost'
     MY_USER = argv[1]
     MY_PASS = argv[2]

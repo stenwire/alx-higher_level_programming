@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This is a generic text, will uodate
+This is a generic text, will update
 later
 """
 
@@ -11,7 +11,7 @@ from sys import argv
 
 def main():
     """
-    This is a generic text, will uodate
+    This is a generic text, will update
     later
     """
     MY_HOST = 'localhost'
