@@ -27,7 +27,8 @@ def main():
 
     cur = db.cursor()
     #cur.execute("SELECT * FROM states WHERE name = '{}' ORDER BY states.id".format(state_name))
-    my_q = "select * from states where states.name=" + "'" "%s"%((state_name)) + "'" + " order by states.id"
+    my_q = "select * from states where states.name = " + "'" "%s"%(
+        (state_name)) + "'" + " order by states.id"
     cur.execute(my_q)
     rows = cur.fetchall()
     for row in rows:
