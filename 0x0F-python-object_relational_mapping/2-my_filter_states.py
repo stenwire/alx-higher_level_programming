@@ -26,9 +26,7 @@ def main():
         passwd=MY_PASS, db=MY_DB, port=MY_PORT)
 
     cur = db.cursor()
-    my_q = "SELECT * FROM states \
-        WHERE name = '{}' ORDER BY states.id".format(state_name)
-    cur.execute(my_q)
+    cur.execute("SELECT * FROM states WHERE name = '{}' ORDER BY states.id".format(state_name))
 
     rows = cur.fetchall()
     for row in rows:
