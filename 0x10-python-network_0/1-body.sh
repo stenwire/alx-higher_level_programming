@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
+# A Bash script that takes in a URL,
+# sends a GET request to the URL
 
 arg=$1
-
 curl -s -L "$arg"
