@@ -3,4 +3,4 @@
 # and displays the size of the body of the response
 
 arg=$1
-curl -s -I "$arg" | grep -i "^Content-Length:" | cut -d' ' -f2
+curl -sI "$arg" | grep 'Content-Length:' | cut -d' ' -f2
