@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 # A Bash script that sends a JSON POST request to a URL passed as the first argument
 # and displays only the status code of the response.
 

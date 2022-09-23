@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 # A Bash script that sends a DELETE request
 # to the URL passed as the first argument
 
