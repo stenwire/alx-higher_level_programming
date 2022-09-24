@@ -6,23 +6,20 @@ A Python script that fetches https://alx-intranet.hbtn.io/status
 
 if __name__ == "__main__":
     import requests
-    import sys
-
-    url = 'http://0.0.0.0:5000/search_user'
-
-    if len(sys.argv) == 1:
-        letter = ""
-        res = requests.post(url, data={'q': letter})
+    from sys import argv
+    if len(argv) == 2:
+        q = argv[1]
     else:
-        letter = sys.argv[1]
-        res = requests.post(url, data={'q': letter})
-
+        q = ""
+    r = requests.post('http://0.0.0.0:5000/search_user', data={'q': q})
     try:
-        res = res.json()
-        if len(res) == 0 or not id or not name:
-            print('No result')
+        r_j = r.json()
+        id = r_j.get('id')
+        name = r_j.get('name')
+        if len(r_j) == 0 or not id or not name:
+            print("No result")
         else:
-            print(f'[{res.get(id)}] {res.get(name)}')
-    except Exception:
-        print('Not a valid JSON')
+            print("[{}] {}".format(id, name))
+    except:
+        print("Not a valid JSON")
 
