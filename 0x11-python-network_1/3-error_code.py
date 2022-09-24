@@ -6,12 +6,13 @@ A Python script that fetches https://alx-intranet.hbtn.io/status
 
 if __name__ == "__main__":
     import sys
-    from  urllib import request, error
+    import urllib.request as request
+    import urllib.error as error
     url = sys.argv[1]
 
     req = request.Request(url)
     try:
-        html = request.urlopen(req)
-        print(html.read())
+        with request.urlopen(req) as res:
+            print(res.read().decode('utf-8'))
     except error.HTTPError as e:
         print(f'Error code: {e.code}')
