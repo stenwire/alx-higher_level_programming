@@ -17,4 +17,5 @@ if __name__ == "__main__":
 
     count = 0
     for x in req[:10]:
-        print(f"{x['sha']}: {x['author']['login']}")
+        print(x.get('sha'), end=': ')
+        print(x.get('commit').get('author').get('name'))
