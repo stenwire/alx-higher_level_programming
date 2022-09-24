@@ -7,7 +7,7 @@ A Python script that fetches https://alx-intranet.hbtn.io/status
 if __name__ == "__main__":
     import sys
     import urllib.request as request
-    import  urllib.parse as parse
+    import urllib.parse as parse
     url = sys.argv[1]
     email = sys.argv[2]
 
