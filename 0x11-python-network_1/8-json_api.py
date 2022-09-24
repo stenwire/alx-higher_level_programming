@@ -21,7 +21,8 @@ if __name__ == "__main__":
         res = res.json()
         if len(res) == 0 or not id or not name:
             print('No result')
-        print(f'[{res.get(id)}] {res.get(name)}')
+        else:
+            print(f'[{res.get(id)}] {res.get(name)}')
     except Exception:
         print('Not a valid JSON')
 
