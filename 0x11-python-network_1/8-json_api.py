@@ -8,8 +8,7 @@ if __name__ == "__main__":
     import requests
     import sys
 
-    # url = 'http://0.0.0.0:5000/search_user'
-    url = 'https://alx-intranet.hbtn.io/status'
+    url = 'http://0.0.0.0:5000/search_user'
 
     if len(sys.argv) == 1:
         letter = ""
@@ -22,7 +21,7 @@ if __name__ == "__main__":
         res = res.json()
         if len(res) < 1:
             print('No result')
-        print(f'[{res.id}] {res.name}')
+        print(f'[{res.get(id)}] {res.get(name)}')
     except Exception:
         print('Not a valid JSON')
 
