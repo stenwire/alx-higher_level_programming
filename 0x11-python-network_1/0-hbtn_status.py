@@ -13,4 +13,4 @@ if __name__ == "__main__":
         str1 = f'- type: {ty}'
         str2 = f'- content: {html}\n\t- utf8 content: {enc}'
 
-    print(f'Body responses:\n\t{str1}\n\t{str2}')
+        print(f'Body response:\n\t{str1}\n\t{str2}')
