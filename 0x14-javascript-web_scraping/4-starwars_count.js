@@ -3,7 +3,7 @@
 const request = require('request');
 const myArgs = process.argv.slice(2);
 const myURL = `${myArgs[0]}`;
-let key = 'characters';
+const key = 'characters';
 
 // request(myURL, function (error, response, body) {
 //   if (error) {
@@ -28,13 +28,13 @@ let key = 'characters';
 //   }
 // });
 
-ch_url = 'https://swapi-api.hbtn.io/api/people/18/'
+ch_url = 'https://swapi-api.hbtn.io/api/people/18/';
 
 request(ch_url, function (error, response, body) {
-      if (error) {
-        console.log(error);
-      } else {
-        const res = JSON.parse(body)
-        console.log(res.films.length)
-      }
+  if (error) {
+    console.log(error);
+  } else {
+    const res = JSON.parse(body);
+    console.log(res.films.length);
+  }
 });
